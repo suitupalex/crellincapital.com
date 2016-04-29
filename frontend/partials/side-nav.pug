@@ -1,0 +1,49 @@
+case category
+  when 'firm'
+    .cell.side-nav
+      a(href='/firm') Firm Profile
+      ul
+        a(href='/firm/history')
+          li History
+        a(href='/firm/partners')
+          li Partners
+        ul
+          a(href='/firm/partners/peter-crellin-smith')
+            li Peter Crellin Smith
+          a(href='/firm/partners/elizabeth-fournier')
+            li Elizabeth A. Fournier
+          a(href='/firm/partners/kathryn-mcelvogue')
+            li Kathryn V. McElvogue
+          hr
+          a(href='/firm/partners/moors-cabot')
+            li Moors &amp; Cabot
+          a(href='/firm/partners/robert-crellin-smith')
+            li Robert Crellin Smith
+        a(href='/firm/commitment-to-community')
+          li Commitment to Community
+  when 'investment'
+    .cell.side-nav
+      a(href='/investment') Investment Philosophy
+      ul
+        a(href='/investment/investment-strategies')
+          li Investment Strategies
+        a(href='/investment/methods-of-analysis')
+          li Methods of Analysis
+        a(href='/investment/offerings-transparency')
+          li Offerings &amp; Transparency
+        a(href='/investment/sa-taa')
+          li Asset Allocation Strategies
+        a(href='/investment/security-selection')
+          li Security Selection
+  when 'literature'
+    .cell.side-nav
+      a(href='/literature') Literature
+      ul
+        a(href='/literature/crellin-publications')
+          li Crellin Publications
+  when 'clients'
+    .cell.side-nav
+      a(href='/clients') Clients We Serve
+      ul
+        a(href='/clients/our-clients')
+          li Our Clients

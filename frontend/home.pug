@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    title Crellin Capital
+    include ./partials/head.pug
+  body
+    #container
+      include ./partials/nav.pug
+
+      .column.full
+        .cell#page-header
+          span Levering our past . . .
+          span Protecting your future.
+          .clear
+        .cell#main
+          .column.two-third#main-left
+            .cell!=content
+          .column.third#main-right
+            include ./partials/crest.pug
+          .clear
+
+      include ./partials/footer.pug

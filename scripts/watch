@@ -1,0 +1,14 @@
+#!/bin/bash
+
+printf "Watching with nodemon:\n\n"
+
+trap 'printf "\n\nKilling nodemon.\n"; kill $(jobs -p); wait $NODEMON_PID' 2 9
+
+nodemon \
+  -e js,pug \
+  --watch backend \
+  --watch frontend \
+  backend/server.js &
+NODEMON_PID=$!
+
+wait $NODEMON_PID

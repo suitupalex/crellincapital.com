@@ -1,0 +1,34 @@
+{
+  "name": "crellincapital.com",
+  "version": "0.1.0",
+  "description": "The website for CrellinCapital.com",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "scripts/start",
+    "test": "scripts/test",
+    "watch": "scripts/watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suitupalex/crellincapital.com.git"
+  },
+  "author": "Alexander Martin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/suitupalex/crellincapital.com/issues"
+  },
+  "homepage": "https://github.com/suitupalex/crellincapital.com#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "hapi": "^13.3.0",
+    "inert": "^3.2.0",
+    "lodash": "^4.11.1",
+    "mysql": "^2.10.2",
+    "pug": "^2.0.0-alpha6",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "nodemon": "^1.9.1"
+  }
+}

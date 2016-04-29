@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    title Crellin Capital
+    include ./partials/head.pug
+  body
+    #splash-flex-container
+      #splash-container
+        a#splash-link(href='/home')
+          img#splash-img(src='/images/splash.png')
+          p Continue
+
+        .splash-desc#splash-a
+          b Diligence
+          p Meticulous review and monitoring of investment opportunities.
+
+        .splash-desc#splash-b
+          b Humility
+          p Humbly accepting our limits with grace and reverence.
+
+        .splash-desc#splash-c
+          b Conservatism
+          p Preservation of your capital is our utmost concern.
+
+        .splash-desc#splash-d
+          b Integrity
+          p Absolute commitment to client first.
+
+    script(src='/assets/splash-animation.js')

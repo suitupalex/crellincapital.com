@@ -1,0 +1,75 @@
+.column.full
+  .cell#banner-cell
+    a(href='/home')
+      img#banner-img(src='/images/logo.png')
+    span#client-login
+      form(
+        name='login'
+        method='post'
+        action='/client-portal'
+      )
+        input(
+          type='text'
+          name='id'
+          placeholder='Account ID'
+          required
+        )
+        input(
+          type='password'
+          name='pin'
+          placeholder='pin'
+          required
+        )
+        input(
+          type='submit'
+          value='Client Login'
+        )
+
+  .cell#navigation
+    .nav
+      a(href='/firm')
+        .nav-item Firm Profile
+      .cell.nav-drop
+        a(href='/firm/history')
+          .nav-header History
+        .nav-header#nav-partners
+          a(href='/firm/partners') Partners
+          #nav-partners-list
+            a(href='/firm/partners/peter-crellin-smith') Peter Crellin Smith
+            a(href='/firm/partners/elizabeth-fournier') Elizabeth A. Fournier
+            a(href='/firm/partners/kathryn-mcelvogue') Kathryn V. McElvogue
+            a(href='/firm/partners/corporate-partners') Corporate Partners
+            a(href='/firm/partners/robert-crellin-smith') Robert Crellin Smith
+        a(href='/firm/commitment-to-community')
+          .nav-header Commitment to Community
+    .nav
+      a(href='/investment')
+        .nav-item Investment Philosophy
+      .cell.nav-drop
+        a(href='/investment/investment-strategies')
+          .nav-header Investment Strategies
+        a(href='/investment/methods-of-analysis')
+          .nav-header Methods of Analysis
+        a(href='/investment/offerings-transparency')
+          .nav-header Offerings <br/> &amp; Transparency
+        a(href='/investment/sa-taa')
+          .nav-header Asset Allocation Strategies
+        a(href='/investment/security-selection')
+          .nav-header Security Selection
+    .nav
+      a(href='/literature')
+        .nav-item Literature
+      .cell.nav-drop
+        a(href='/literature/crellin-publications')
+          .nav-header Crellin Publications
+    .nav
+      a(href='/clients')
+        .nav-item Clients We Serve
+      .cell.nav-drop
+        a(href='/clients/our-clients')
+          .nav-header Our Clients
+    .nav
+      a(href='/contact')
+        .nav-item Contact Us
+      .cell.nav-drop
+    .clear

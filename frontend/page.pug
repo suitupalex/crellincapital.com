@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    include ./partials/head.pug
+  body
+    #container
+      include ./partials/nav.pug
+
+      .column.full
+        .cell#page-header
+          span Leveraging your past . . .
+          span Protecting your future.
+          .clear
+        .cell#main
+          .column.two-third#main-left
+            .cell!=content
+            .clear
+          .column.third#main-right
+            include ./partials/crest.pug
+            include ./partials/side-nav.pug
+          .clear
+
+      include ./partials/footer.pug
